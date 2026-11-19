@@ -410,6 +410,8 @@ p{margin:0}
   .hero-tx{position:relative;left:auto;right:auto;bottom:auto;grid-template-columns:minmax(0,1fr);padding:0 20px 24px;margin-top:-90px;gap:30px}
   .hero h1{font-size:clamp(2.9rem,13vw,3.6rem)}
   .hero .ctas .btn{width:100%;justify-content:space-between}
+  .hero .ctas .tl{width:100%;justify-content:center;min-height:52px;border:1px solid rgba(255,255,255,.28);border-radius:999px}
+  .hero .ctas .tl::after{display:none}
   .side{width:100%}
   .crm-tag{display:none}
   .stmt .fig{width:min(230px,62%);margin-top:-4px}
@@ -446,13 +448,13 @@ p{margin:0}
   .sb-row{grid-template-columns:minmax(0,1fr);margin-top:-40px}
   .sb-ph{grid-column:1;grid-row:1;width:min(320px,84%);justify-self:center}
   .sb-col{padding-top:0}
-  .sb-col.l,.sb-col.r{grid-column:1;justify-items:start;text-align:left}
+  .sb-col.l,.sb-col.r{grid-column:1;justify-items:center;text-align:center}
   .faq-l{position:static}
   .cta-in{padding:28px 20px 20px;grid-template-columns:minmax(0,1fr)}
   .cta-l,.map{grid-column:1/-1}
   .info{grid-template-columns:minmax(0,1fr)}
   .cta .acts .btn{width:100%;justify-content:space-between}
-  .legal{justify-content:center;text-align:center}
+  .legal{flex-direction:column;align-items:center;gap:6px;text-align:center}
   .mbar{display:flex;position:fixed;z-index:40;left:0;right:0;bottom:0;padding:10px var(--gr) calc(10px + env(safe-area-inset-bottom,0px)) var(--gl);transform:translateY(120%);transition:transform .6s var(--ease)}
   .mbar.on{transform:none}
   .mbar .btn{flex:1;justify-content:space-between;box-shadow:0 12px 30px -10px rgba(0,0,0,.45)}
